@@ -1,0 +1,251 @@
+1 先下载node LTS哪一个 (https://nodejs.org/en/)（这个是你先下载的软件，然后   进行安装node）
+2 点击下载的node然后进行安装 next next然后他就自动安装在c盘的C:\Program    Files   会安装一个nodejs文件
+3  在c盘里面新建一个node文件，进行写项目（也可在其他地方新建）
+4  检验有没有安装好node 和npm ,这个可通过运行cmd来查看,只是这个要通过管理员   来运行
+ （
+    Microsoft Windows [版本 10.0.16299.309]
+   (c) 2017 Microsoft Corporation。保留所有权利。
+
+   C:\WINDOWS\system32>node -v
+   v8.10.0
+
+   C:\WINDOWS\system32>npm -v
+   5.6.0
+
+   C:\WINDOWS\system32>c:
+
+   C:\WINDOWS\system32>cd\
+
+   C:\>cd node
+
+   C:\node>npm list
+   C:\node
+   `-- (empty)
+  ）
+
+5 安装express  
+ （C:\node>npm install express）
+
+
+  npm WARN saveError ENOENT: no such file or directory, open 'C:\node\package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open 'C:\node\package.json'
+npm WARN node No description
+npm WARN node No repository field.
+npm WARN node No README data
+npm WARN node No license field.
+
++ express@4.16.3
+added 49 packages in 5.536s
+
+C:\node>npm list
+C:\node
+`-- express@4.16.3
+  +-- accepts@1.3.5
+  | +-- mime-types@2.1.18
+  | | `-- mime-db@1.33.0
+  | `-- negotiator@0.6.1
+  +-- array-flatten@1.1.1
+  +-- body-parser@1.18.2
+  | +-- bytes@3.0.0
+  | +-- content-type@1.0.4 deduped
+  | +-- debug@2.6.9 deduped
+  | +-- depd@1.1.2 deduped
+  | +-- http-errors@1.6.2
+  | | +-- depd@1.1.1 extraneous
+  | | +-- inherits@2.0.3
+  | | +-- setprototypeof@1.0.3 extraneous
+  | | `-- statuses@1.4.0 deduped
+  | +-- iconv-lite@0.4.19
+  | +-- on-finished@2.3.0 deduped
+  | +-- qs@6.5.1 deduped
+  | +-- raw-body@2.3.2
+  | | +-- bytes@3.0.0 deduped
+  | | +-- http-errors@1.6.2 deduped
+  | | +-- iconv-lite@0.4.19 deduped
+  | | `-- unpipe@1.0.0 deduped
+  | `-- type-is@1.6.16 deduped
+  +-- content-disposition@0.5.2
+  +-- content-type@1.0.4
+  +-- cookie@0.3.1
+  +-- cookie-signature@1.0.6
+  +-- debug@2.6.9
+  | `-- ms@2.0.0
+  +-- depd@1.1.2
+  +-- encodeurl@1.0.2
+  +-- escape-html@1.0.3
+  +-- etag@1.8.1
+  +-- finalhandler@1.1.1
+  | +-- debug@2.6.9 deduped
+  | +-- encodeurl@1.0.2 deduped
+  | +-- escape-html@1.0.3 deduped
+  | +-- on-finished@2.3.0 deduped
+  | +-- parseurl@1.3.2 deduped
+  | +-- statuses@1.4.0 deduped
+  | `-- unpipe@1.0.0
+  +-- fresh@0.5.2
+  +-- merge-descriptors@1.0.1
+  +-- methods@1.1.2
+  +-- on-finished@2.3.0
+  | `-- ee-first@1.1.1
+  +-- parseurl@1.3.2
+  +-- path-to-regexp@0.1.7
+  +-- proxy-addr@2.0.3
+  | +-- forwarded@0.1.2
+  | `-- ipaddr.js@1.6.0
+  +-- qs@6.5.1
+  +-- range-parser@1.2.0
+  +-- safe-buffer@5.1.1
+  +-- send@0.16.2
+  | +-- debug@2.6.9 deduped
+  | +-- depd@1.1.2 deduped
+  | +-- destroy@1.0.4
+  | +-- encodeurl@1.0.2 deduped
+  | +-- escape-html@1.0.3 deduped
+  | +-- etag@1.8.1 deduped
+  | +-- fresh@0.5.2 deduped
+  | +-- http-errors@1.6.2 deduped
+  | +-- mime@1.4.1
+  | +-- ms@2.0.0 deduped
+  | +-- on-finished@2.3.0 deduped
+  | +-- range-parser@1.2.0 deduped
+  | `-- statuses@1.4.0 deduped
+  +-- serve-static@1.13.2
+  | +-- encodeurl@1.0.2 deduped
+  | +-- escape-html@1.0.3 deduped
+  | +-- parseurl@1.3.2 deduped
+  | `-- send@0.16.2 deduped
+  +-- setprototypeof@1.1.0
+  +-- statuses@1.4.0
+  +-- type-is@1.6.16
+  | +-- media-typer@0.3.0
+  | `-- mime-types@2.1.18 deduped
+  +-- utils-merge@1.0.1
+  `-- vary@1.1.2
+
+
+
+
+全程展示
+Microsoft Windows [版本 10.0.16299.309]
+(c) 2017 Microsoft Corporation。保留所有权利。
+
+C:\WINDOWS\system32>node -v
+v8.10.0
+
+C:\WINDOWS\system32>npm -v
+5.6.0
+
+C:\WINDOWS\system32>c:
+
+C:\WINDOWS\system32>cd\
+
+C:\>cd node
+
+C:\node>npm list
+C:\node
+`-- (empty)
+
+
+
+C:\node>npm install express
+npm WARN saveError ENOENT: no such file or directory, open 'C:\node\package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open 'C:\node\package.json'
+npm WARN node No description
+npm WARN node No repository field.
+npm WARN node No README data
+npm WARN node No license field.
+
++ express@4.16.3
+added 49 packages in 5.536s
+
+C:\node>npm list
+C:\node
+`-- express@4.16.3
+  +-- accepts@1.3.5
+  | +-- mime-types@2.1.18
+  | | `-- mime-db@1.33.0
+  | `-- negotiator@0.6.1
+  +-- array-flatten@1.1.1
+  +-- body-parser@1.18.2
+  | +-- bytes@3.0.0
+  | +-- content-type@1.0.4 deduped
+  | +-- debug@2.6.9 deduped
+  | +-- depd@1.1.2 deduped
+  | +-- http-errors@1.6.2
+  | | +-- depd@1.1.1 extraneous
+  | | +-- inherits@2.0.3
+  | | +-- setprototypeof@1.0.3 extraneous
+  | | `-- statuses@1.4.0 deduped
+  | +-- iconv-lite@0.4.19
+  | +-- on-finished@2.3.0 deduped
+  | +-- qs@6.5.1 deduped
+  | +-- raw-body@2.3.2
+  | | +-- bytes@3.0.0 deduped
+  | | +-- http-errors@1.6.2 deduped
+  | | +-- iconv-lite@0.4.19 deduped
+  | | `-- unpipe@1.0.0 deduped
+  | `-- type-is@1.6.16 deduped
+  +-- content-disposition@0.5.2
+  +-- content-type@1.0.4
+  +-- cookie@0.3.1
+  +-- cookie-signature@1.0.6
+  +-- debug@2.6.9
+  | `-- ms@2.0.0
+  +-- depd@1.1.2
+  +-- encodeurl@1.0.2
+  +-- escape-html@1.0.3
+  +-- etag@1.8.1
+  +-- finalhandler@1.1.1
+  | +-- debug@2.6.9 deduped
+  | +-- encodeurl@1.0.2 deduped
+  | +-- escape-html@1.0.3 deduped
+  | +-- on-finished@2.3.0 deduped
+  | +-- parseurl@1.3.2 deduped
+  | +-- statuses@1.4.0 deduped
+  | `-- unpipe@1.0.0
+  +-- fresh@0.5.2
+  +-- merge-descriptors@1.0.1
+  +-- methods@1.1.2
+  +-- on-finished@2.3.0
+  | `-- ee-first@1.1.1
+  +-- parseurl@1.3.2
+  +-- path-to-regexp@0.1.7
+  +-- proxy-addr@2.0.3
+  | +-- forwarded@0.1.2
+  | `-- ipaddr.js@1.6.0
+  +-- qs@6.5.1
+  +-- range-parser@1.2.0
+  +-- safe-buffer@5.1.1
+  +-- send@0.16.2
+  | +-- debug@2.6.9 deduped
+  | +-- depd@1.1.2 deduped
+  | +-- destroy@1.0.4
+  | +-- encodeurl@1.0.2 deduped
+  | +-- escape-html@1.0.3 deduped
+  | +-- etag@1.8.1 deduped
+  | +-- fresh@0.5.2 deduped
+  | +-- http-errors@1.6.2 deduped
+  | +-- mime@1.4.1
+  | +-- ms@2.0.0 deduped
+  | +-- on-finished@2.3.0 deduped
+  | +-- range-parser@1.2.0 deduped
+  | `-- statuses@1.4.0 deduped
+  +-- serve-static@1.13.2
+  | +-- encodeurl@1.0.2 deduped
+  | +-- escape-html@1.0.3 deduped
+  | +-- parseurl@1.3.2 deduped
+  | `-- send@0.16.2 deduped
+  +-- setprototypeof@1.1.0
+  +-- statuses@1.4.0
+  +-- type-is@1.6.16
+  | +-- media-typer@0.3.0
+  | `-- mime-types@2.1.18 deduped
+  +-- utils-merge@1.0.1
+  `-- vary@1.1.2
+
+npm ERR! extraneous: depd@1.1.1 C:\node\node_modules\http-errors\node_modules\depd
+npm ERR! extraneous: setprototypeof@1.0.3 C:\node\node_modules\http-errors\node_modules\setprototypeof
+
+C:\node>
